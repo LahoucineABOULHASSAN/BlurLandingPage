@@ -1,12 +1,12 @@
 {
-  "name": "landingpage",
+  "name": "blurlandingpage",
   "version": "1.0.0",
   "description": "This project is a sipmle landing blur page build using html5 and Sass",
   "main": "index.js",
-  "homepage": "https://landingpage.netlify.app",
+  "homepage": "https://blurlandingpage.netlify.app",
   "repository": {
     "type": "git",
-    "url": "https://github.com/LahoucineABOULHASSAN/landingpage"
+    "url": "https://github.com/LahoucineABOULHASSAN/blurlandingpage"
   },
   "scripts": {
     "sass": "sass scss:src/css",

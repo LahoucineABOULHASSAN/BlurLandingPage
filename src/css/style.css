@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #d9d9d9;
+}
+
+main#main-content {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+main#main-content section#cover-section {
+  width: 100%;
+  height: 100vh;
+  background: url("https://images.unsplash.com/photo-1612103198005-b238154f4590?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1349&q=80") no-repeat center;
+  background-size: cover;
+  transition: all 0.9s ease-out;
+}
+main#main-content section#content-section {
+  position: absolute;
+  width: 60%;
+  background: rgba(35, 35, 35, 0.5);
+  border-radius: 3px;
+  padding: 1rem;
+  filter: blur(3px);
+  transition: all 0.9s ease-out;
+}
+main#main-content section#content-section h1,
+main#main-content section#content-section p {
+  margin-bottom: 1rem;
+}
+main#main-content section#content-section h1 {
+  font-size: 3rem;
+}
+main#main-content section#content-section a {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.3rem;
+  word-spacing: 3px;
+  display: inline-block;
+  background: #ffd900;
+  color: #232323;
+  border: none;
+  border-radius: 3px;
+  padding: 1rem 2rem;
+}
+
+main#main-content:hover section#cover-section {
+  filter: blur(5px);
+}
+
+main#main-content:hover section#content-section {
+  filter: blur(0px);
+}
+
+@media screen and (max-width: 560px) {
+  .hide {
+    display: none;
+  }
+
+  main#main-content section#content-section {
+    filter: blur(0px);
+  }
+  main#main-content section#content-section figure {
+    width: 60%;
+    margin: auto;
+  }
+  main#main-content section#content-section figure img {
+    width: 100%;
+  }
+  main#main-content section#content-section h1 {
+    font-size: 1.5rem;
+  }
+  main#main-content section#content-section a {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+
+  main#main-content:hover section#cover-section {
+    filter: blur(0px);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
