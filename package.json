@@ -18,5 +18,8 @@
     "css"
   ],
   "author": "Lahoucine ABOULHASSAN",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "sass": "^1.32.8"
+  }
 }
