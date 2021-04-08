@@ -1,6 +1,6 @@
 # BlurLandingPage
 
-This project is a sipmle landing blur page build using html5 and Sass
+This project is a simple landing blur page build using html5 and Sass.
 The Technologies used on this app are the following:
 -HTML5
 -SASS
