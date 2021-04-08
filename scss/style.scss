@@ -1,0 +1,88 @@
+@import "config";
+//------- GLOBALE STYLE -------\\
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: $font;
+  color: $light-color;
+}
+//------- COVER SECTION -------\\
+main#main-content {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  section#cover-section {
+    width: 100%;
+    height: 100vh;
+    background: url($cover-url) no-repeat center;
+    background-size: cover;
+    @include slowChange;
+  }
+  section#content-section {
+    position: absolute;
+    width: 60%;
+    background: rgba($dark-color, 0.5);
+    border-radius: 3px;
+    padding: 1rem;
+    filter: blur(3px);
+    @include slowChange;
+    h1,
+    p {
+      margin-bottom: 1rem;
+    }
+    h1 {
+      font-size: 3rem;
+    }
+    a {
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1.3rem;
+      word-spacing: 3px;
+      display: inline-block;
+      background: $primary-color;
+      color: $dark-color;
+      border: none;
+      border-radius: 3px;
+      padding: 1rem 2rem;
+    }
+  }
+}
+main#main-content:hover section#cover-section {
+  filter: blur(5px);
+}
+main#main-content:hover section#content-section {
+  filter: blur(0px);
+}
+//------- RESPONSIVNESS -------\\
+@media screen and (max-width: 560px) {
+  .hide {
+    display: none;
+  }
+  main#main-content {
+    section#content-section {
+      filter: blur(0px);
+
+      figure {
+        width: 60%;
+        margin: auto;
+        img {
+          width: 100%;
+        }
+      }
+      h1 {
+        font-size: 1.5rem;
+      }
+      a {
+        font-size: 1rem;
+        padding: 0.5rem;
+      }
+    }
+  }
+  main#main-content:hover section#cover-section {
+    filter: blur(0px);
+  }
+}

@@ -1,0 +1,14 @@
+//------- IMPORTS -------\\
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap");
+//------- DEFINE VARIABLES -------\\
+$primary-color: #ff0082;
+$dark-color: #232323;
+$light-color: #d9d9d9;
+
+$font: "Open Sans", sans-serif;
+
+$cover-url: "../img/cover.jpeg";
+//------- DEFINE MIXINS -------\\
+@mixin slowChange() {
+  transition: all 0.9s ease-out;
+}
